@@ -1,4 +1,4 @@
-# Redux-Observable example
+# Next with Redux-Observable and TypeScript example
 
 This example is a page that renders information about Star-Wars characters. It
 fetches new character every 3 seconds having the initial character fetched on
@@ -6,7 +6,6 @@ a server.
 
 Example also uses `redux-logger` to log every action.
 
-![demo page](demo.png)
 
 ## Deploy your own
 
