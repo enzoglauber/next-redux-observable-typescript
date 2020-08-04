@@ -1,15 +1,14 @@
-import { useSelector } from 'react-redux'
+import { useSelector } from 'react-redux';
 
 const useUser = () => {
   return useSelector((state) => ({
-    character: state.character,
-    error: state.error,
-    isFetchedOnServer: state.isFetchedOnServer,
+    users: state.users,
   }))
 }
 
 const UserInfo = () => {
-  const { character, isFetchedOnServer, error } = useUser()
+  const { users } = useUser()
+  const { character, isFetchedOnServer, error } = users
   const { name, id, username, email, phone, website } = character
 
   return (

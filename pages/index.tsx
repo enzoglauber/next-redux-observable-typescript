@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import Link from 'next/link'
 import UserInfo from '../components/UserInfo'
-import { stopFetchingUsers, startFetchingUsers } from '../store/actions'
+import { stopFetchingUsers, startFetchingUsers } from '../store/ducks/users'
 
 const Counter = () => {
   const dispatch = useDispatch()
